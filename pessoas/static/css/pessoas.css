@@ -326,3 +326,47 @@ a:link {
 a:hover {
     text-decoration: none;
 }
+
+.div_form {
+    background-color: #e4e9ffd5;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 1%;
+    grid-auto-columns: auto;
+    font-size: 28px;
+    margin: 0 28%;
+}
+
+.shadow_form {
+    box-shadow: 10 50px 50px rgba(0, 0, 0, .000);
+}
+
+.label_div {
+    display: flow-root;
+}
+
+.label_div input {
+    float: right;
+}
+
+.input_form input,
+label {
+    margin: 10px;
+    border-radius: 15px;
+    border: none;
+}
+
+.submit_btn {
+    position: center;
+    align-items: center;
+    padding: 0 34%;
+}
+
+.input_form input {
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.input_form label {
+    margin-right: 2px;
+}
