@@ -25,27 +25,27 @@
             <table class="div-back shadow tb-arr tabled table-status table-hover table table-striped ">
                 <thead class="arr">
                     <tr class="font-25 tr">
-                        <td class="align-middle">ID</td>
-                        <td class="align-middle">Nome</td>
-                        <td class="align-middle">Sobrenome</td>
-                        <td class="align-middle">Idade</td>
-                        <td class="align-middle">Data de Nascimento</td>
-                        <td class="align-middle">e-mail</td>
-                        <td class="align-middle">Apelido</td>
-                        <td class="align-middle">Observação</td>
+                        <td width="5%" class="align-middle">ID</td>
+                        <td width="13%" class="align-middle">Nome</td>
+                        <td width="12%" class="align-middle">Sobrenome</td>
+                        <td width="5%" class="align-middle">Idade</td>
+                        <td width="15%" class="align-middle">Data de Nascimento</td>
+                        <td width="20%" class="align-middle">e-mail</td>
+                        <td width="8%" class="align-middle">Apelido</td>
+                        <td width="31%" class="align-middle">Observação</td>
                     </tr>
                 </thead>
                 {% for pessoa in pessoas %}
                 <tbody class="td-center">
                     <tr class="font-20 tr " v-for="order in list" v-bind:key="order.cod">
-                        <td width="5%" class="align-middle">{{pessoa.id}}</td>
-                        <td width="13%" class="align-middle">{{pessoa.nome}}</td>
-                        <td width="7%" class="align-middle">{{pessoa.sobrenome}}</td>
-                        <td width="7%" class="align-middle">{{pessoa.idade}}</td>
-                        <td width="18%" class="align-middle">{{pessoa.data_nascimento}}</td>
-                        <td width="20%" class="align-middle">{{pessoa.email}}</td>
-                        <td width="17%" class="align-middle">{{pessoa.apelido}}</td>
-                        <td width="23%" class="align-middle">{{pessoa.observacao}}</td>
+                        <td class="align-middle">{{pessoa.id}}</td>
+                        <td class="align-middle">{{pessoa.nome}}</td>
+                        <td class="align-middle">{{pessoa.sobrenome}}</td>
+                        <td class="align-middle">{{pessoa.idade}}</td>
+                        <td class="align-middle">{{pessoa.data_nascimento}}</td>
+                        <td class="align-middle">{{pessoa.email}}</td>
+                        <td class="align-middle">{{pessoa.apelido}}</td>
+                        <td class="align-middle">{{pessoa.observacao}}</td>
                     </tr>
                 </tbody>
                 {% endfor %}

@@ -15,36 +15,7 @@
         <div class="div_form shadow_form arr1">
             <h1 class="register_header">Cadastro de pessoas</h1>
             <form method="POST" class="input_form">
-                {% csrf_token %}
-                <div class="label_div">
-                    <label for=" first_name">Nome:</label>
-                    <input required id="first_name" value="{{name}} {{second_name}}" type="text">
-                </div>
-                <div class="label_div">
-                    <label for="last_name"> Sobrenome:</label>
-                    <input required id="last_name" value="{{last_name}}" type="text">
-                </div>
-                <div class="label_div">
-                    <label for="email">e-mail:</label>
-                    <input required id="email" type="email">
-                </div>
-                <div class="label_div">
-                    <label for="nickname">Apelido:</label>
-                    <input id="nickname" type="text">
-                </div class="label_div">
-                <div class="label_div">
-                    <label for="age">Idade:</label>
-                    <input required min="0" id="age" style="width: 13%; " type="number">
-                </div>
-                <div class="label_div">
-                    <label for="date_birth">Data de nascimento:</label>
-                    <input required id="date_birth" type="date">
-                </div>
-                <div class="label_div">
-
-                    <label for="Note">Observação:</label>
-                    <input id="Note" type="text">
-                </div>
+                {% csrf_token %} {{form.as_p}}
                 <div class="submit_btn">
                     <input id="submit" class="btn orange shadow margin " type="submit" value="Cadastrar">
                 </div>
